@@ -1,0 +1,364 @@
+{
+  "tests": [
+    {
+      "name": "applicationLoads",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#applicationLoads test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartInsertInvalidQuantityZero",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartInsertInvalidQuantityZero test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartInsertInvalidQuantityNegative",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartInsertInvalidQuantityNegative test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartInsertInvalidQuantityMax",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartInsertInvalidQuantityMax test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartInsertMovie",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartInsertMovie test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartInsertMovieAlreadyInserted",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartInsertMovieAlreadyInserted test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartInsertMovieExistingCart",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartInsertMovieExistingCart test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartInsertMovieMultiple",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartInsertMovieMultiple test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "cartUpdateInvalidQuantityZero",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartUpdateInvalidQuantityZero test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartUpdateInvalidQuantityNegative",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartUpdateInvalidQuantityNegative test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartUpdateInvalidQuantityMax",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartUpdateInvalidQuantityMax test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartUpdateMovieNotInCart",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartUpdateMovieNotInCart test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartUpdateMovieQuantity",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartUpdateMovieQuantity test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartDeleteDoesNotExist",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartDeleteDoesNotExist test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartDeleteSuccess",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartDeleteSuccess test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartDeleteFailOnSecond",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartDeleteFailOnSecond test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartDeleteDoesntEffectSameMovie",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartDeleteDoesntEffectSameMovie test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartRetrieveEmpty",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartRetrieveEmpty test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartRetrieveAdmin",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartRetrieveAdmin test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartRetrieveEmployee",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartRetrieveEmployee test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartRetrievePremium",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartRetrievePremium test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartClearAdmin",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartClearAdmin test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartClearEmployee",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartClearEmployee test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "cartClearPremium",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#cartClearPremium test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderPaymentEmptyCart",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderPaymentEmptyCart test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderPaymentCreated",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderPaymentCreated test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderComplete",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderComplete test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderCompleteWrongUser",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderCompleteWrongUser test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderCompleteNotCompleted",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderCompleteNotCompleted test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderListFoundAdmin",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderListFoundAdmin test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderListFoundEmployee",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderListFoundEmployee test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderListFoundPremium",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderListFoundPremium test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderListNoneFound",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderListNoneFound test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderDetailWrongUserAdmin",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderDetailWrongUserAdmin test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderDetailEmployee",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderDetailEmployee test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "orderDetailPremium",
+      "setup": "",
+      "run": "mvn -DDB_USERNAME=root -DDB_PASSWORD=\"\" -Dtest=BillingServiceTest#orderDetailPremium test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    }
+  ]
+}

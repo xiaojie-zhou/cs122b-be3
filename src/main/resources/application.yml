@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: BillingService
+  datasource:
+    url: jdbc:mysql://localhost:3306
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+server:
+  address: 0.0.0.0
+  port: 8083
+  error:
+    include-exception: true
+    include-message: always
+
+logging:
+  file:
+    name: ./BillingService.log
+
+billing:
+  stripe-api-key: ${STRIPE_API_KEY}

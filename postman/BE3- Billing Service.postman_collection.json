@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "abedce75-2d3e-466b-900d-3e3d88a1063c",
+		"name": "BE3: Billing Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cart Insert",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"movieId\": null,\n    \"quantity\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/cart/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cart",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"movieId\": null,\n    \"quantity\": null\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/cart/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cart",
+						"update"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "director",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "genre",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "direction",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Delete By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/cart/delete/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cart",
+						"delete",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "birthdate",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "movieTitle",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "orderBy",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "direction",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Retrieve",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/cart/retrieve",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cart",
+						"retrieve"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Clear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/cart/clear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"cart",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/order/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"order",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Complete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentId\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8083/order/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"order",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/order/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/order/detail/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"order",
+						"detail",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{admin_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "admin_token",
+			"value": "eyJraWQiOiJjZWI1YmUyMi0yN2FhLTQzMzEtOWFjZi1mYjlhOThiNjQzZjMiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJBZG1pbkBleGFtcGxlLmNvbSIsImlkIjoxLCJleHAiOjAsImlhdCI6MCwicm9sZXMiOlsiQURNSU4iXX0.uh3jMc6eBrlQ3qmrNSCuEC0bdOMsJPfa7l_jZ5Kd8u-A5yV0d0SdxSUr_drkeIVSAbO5qRTUUFvlveDZjdYtXA"
+		},
+		{
+			"key": "employee_token",
+			"value": "eyJraWQiOiJjZWI1YmUyMi0yN2FhLTQzMzEtOWFjZi1mYjlhOThiNjQzZjMiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJFbXBsb3llZUBleGFtcGxlLmNvbSIsImlkIjoyLCJleHAiOjAsImlhdCI6MCwicm9sZXMiOlsiRU1QTE9ZRUUiXX0.KCQ0H5g4A4bOCiFdHnNPn5TJ7dytnCqz4GlGabHRfCYwAhcpTtJyd_lQ-4gLgnZaRRxtAFl5UPRqMB4ry6jGtA"
+		},
+		{
+			"key": "premium_token",
+			"value": "eyJraWQiOiJjZWI1YmUyMi0yN2FhLTQzMzEtOWFjZi1mYjlhOThiNjQzZjMiLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJzdWIiOiJQcmVtaXVtQGV4YW1wbGUuY29tIiwiaWQiOjMsImV4cCI6MCwiaWF0IjowLCJyb2xlcyI6WyJQUkVNSVVNIl19.HBdaFIKWmWtS7HKYJ26nbJJUaZCFZKhWFOXk3AXpJysj3oCNw5czZoz0jcJVJtXpiwr_slwzGscrxPaC7drfcQ"
+		}
+	]
+}
